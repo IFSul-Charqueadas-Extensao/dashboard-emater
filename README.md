@@ -15,17 +15,17 @@ Está assumido que, em cada distrito, estará instalado um pluviômetro IoT que 
 As ferramentas e tecnologias utilizadas nos códigos para o mapa interativo foram:
 
 1. **React + Vite** - Esta é a base do projeto. React é uma biblioteca JavaScript para construir interfaces de usuário de forma declarativa e eficiente. Vite é um "bundler" e servidor de desenvolvimento extremamente rápido que otimiza a forma como o código é empacotado para o navegador. A combinação dos dois é uma das pilhas de tecnologia mais populares e eficientes para criar aplicações web modernas.
-2. **Leaflet** - É uma biblioteca JavaScript de código aberto e totalmente gratuita, projetada para criar mapas interativos. A principal vantagem do Leaflet é que ele é leve e focado em simplicidade, mas ainda assim oferece todas as funcionalidades essenciais de mapeamento, como zoom, pan e marcações, sem a necessidade de APIs pagas.
+2. **Leaflet** - É uma biblioteca JavaScript de código aberto e totalmente gratuita, projetada para criar mapas interativos. A principal vantagem do Leaflet é que é leve e focado em simplicidade, mas ainda assim oferece todas as funcionalidades essenciais de mapeamento, como zoom, pan e marcações, sem a necessidade de APIs pagas.
 3. **React-Leaflet** - Esta biblioteca funciona como uma "ponte" entre o React e o Leaflet. Em vez de manipular o DOM diretamente como o Leaflet faz, o React-Leaflet permite que você use os recursos do Leaflet como componentes React. Isso torna a criação e o gerenciamento do mapa mais "React-like", aproveitando o sistema de componentes, o estado e as propriedades.
 4. **React Router DOM** - O React Router DOM é a biblioteca padrão para gerenciar a navegação em aplicações React de página única (Single Page Applications). Ele permite que você defina diferentes rotas (URLs) para sua aplicação, como / para o mapa principal e /bairro/:nomeBairro para a página de detalhes, criando uma experiência de navegação fluida sem recarregar a página inteira.
 5. **OpenStreetMap** - O OpenStreetMap (OSM) é uma fonte de dados de mapas gratuita e de código aberto, criada por uma comunidade global. É a "base" visual do mapa que aparece no seu projeto. Utilizamos os TileLayers do OSM, que são as "peças" de imagem do mapa, para preencher o fundo da sua aplicação. É uma excelente alternativa gratuita a serviços como Google Maps ou Mapbox, que costumam cobrar pelo uso.
 
-Em resumo, a escolha dessas ferramentas foi baseada em uma combinação de fatores: elas são gratuitas, amplamente utilizadas na comunidade e se integram de forma coesa para oferecer uma solução completa e eficiente para o projeto.
+Em resumo, a escolha dessas ferramentas baseou-se em uma combinação de fatores: são gratuitas, amplamente utilizadas na comunidade e se integram de forma coesa, oferecendo uma solução completa e eficiente para o projeto.
 
 ### Utilizacao
 
-** Caso erro 429, token expirou e deve ser gerado novamente. Para isso, seguir instruções do arquivo agroapi-primeiros-passos-token.pdf. **
-** Após gerar token, substituir no arquivo .env **
+Consulte o arquivo `agroapi-primeiros-passos-token.pdf` para gerar tokens e substituir os valores no arquivo `.env`.
+Caso ocorra o `Erro 429` (_Too Many Requests_), o token expirou e deve ser gerado novamente.
 
 ```bash
 ### Instalação de Pacotes
@@ -33,4 +33,4 @@ npm install
 npm install @phosphor-icons/react
 npm install react-router-dom
 npm install react-chartjs-2 chart.js
-```bash
+```
